@@ -1,0 +1,239 @@
+* {
+  text-transform: capitalize;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.holder {
+  background-color: #610061;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.container .calculator {
+  max-width: 500px;
+  margin: 10px auto;
+  color: white;
+}
+
+.container .calculator .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .calculator .header .calc {
+  font-size: 20px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .calculator .header .theme {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .calculator .header .theme .numbers {
+  position: absolute;
+  top: -16px;
+  right: 5px;
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.container .calculator .header .theme ul {
+  list-style: none;
+  height: 20px;
+  background-color: black;
+  margin: 0;
+  margin-left: 10px;
+  border-radius: 10px;
+  height: 20px;
+  position: relative;
+  width: 100px;
+}
+
+.container .calculator .header .theme ul li {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: #ff9800;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container .calculator .header .theme ul li:not(.active) {
+  opacity: 0.2;
+}
+
+.container .calculator .header .theme ul li.one {
+  margin-left: -40px;
+}
+
+.container .calculator .header .theme ul li.three {
+  margin-left: 40px;
+}
+
+.container .calculator .screen {
+  position: relative;
+  max-width: 500px;
+  height: 100px;
+  background-color: #121111;
+  border-radius: 5px;
+}
+
+.container .calculator .screen .tv {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding-block: 20px;
+  background-color: #121111;
+  list-style: none;
+}
+
+.container .buttons li {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 30px;
+  width: 22.5%;
+  font-size: 20px;
+  -webkit-box-shadow: #aea9a9 0 2px 0;
+          box-shadow: #aea9a9 0 2px 0;
+}
+
+.container .buttons li.reset, .container .buttons li.del {
+  background-color: grey;
+  color: white;
+}
+
+.container .buttons li.reset, .container .buttons li.equal {
+  width: 47.5%;
+}
+
+.container .buttons li.equal {
+  width: 47.5%;
+  background-color: #ff5722;
+  color: white;
+}
+
+.butcolor1 {
+  background-color: #121111;
+}
+
+.butcolor2 {
+  background-color: #dad5d5 !important;
+}
+
+.butcolor3 {
+  background-color: #6f056feb !important;
+}
+
+.buttonscolor {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.buttonscolor:hover {
+  background-color: #f0cbf0 !important;
+}
+
+.resDel1 {
+  background-color: grey;
+}
+
+.resDel2 {
+  background-color: #03a9f4 !important;
+}
+
+.resDel3 {
+  background-color: #b908b9eb !important;
+}
+
+.screenc1 {
+  background-color: black !important;
+  color: white !important;
+}
+
+.screenc2 {
+  background-color: white !important;
+  color: black !important;
+}
+
+.screenc3 {
+  background-color: #b908b9eb !important;
+  color: wheat !important;
+}
+/*# sourceMappingURL=calc.css.map */
